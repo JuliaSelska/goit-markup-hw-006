@@ -1105,16 +1105,16 @@ button {
 }
 
 .contact-form-checkbox-mobile-menu:checked
-  + .contact-form-checkbox-label-mobile-menu
-  > .contact-form-checkbox-custom-mobile-menu {
+  ~ .contact-form-checkbox-label-mobile-menu
+  .contact-form-checkbox-custom-mobile-menu {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
 }
 
 .contact-form-checkbox-mobile-menu:focus
-  + .contact-form-checkbox-label-mobile-menu
-  > .contact-form-checkbox-custom-mobile-menu {
+  ~ .contact-form-checkbox-label-mobile-menu
+  .contact-form-checkbox-custom-mobile-menu {
   outline: 2px solid rgb(0, 0, 255 0, 5);
 }
 
@@ -1165,6 +1165,16 @@ button {
     min-height: 584px;
     padding: 72px 24px 24px 24px;
   }
+  .modal-backdrop-mobile-menu.is-open {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+  .modal-backdrop-mobile-menu {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -1172,5 +1182,15 @@ button {
     width: 408px;
     min-height: 584px;
     padding: 72px 24px 24px 24px;
+  }
+  .modal-backdrop-mobile-menu.is-open {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+  .modal-backdrop-mobile-menu {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
   }
 }
