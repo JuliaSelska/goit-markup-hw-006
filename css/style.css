@@ -340,7 +340,6 @@ button {
   align-items: center;
   justify-content: center;
   line-height: 0;
-  margin-top: 48px;
   flex-grow: 1;
   background-color: #4d5ae5;
   border-radius: 50%;
@@ -766,12 +765,6 @@ button {
   justify-content: center;
 }
 
-..page-footer-wrap-mobile-menu {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
 .footer-logo-mobile-menu {
   display: inline-block;
   margin-bottom: 16px;
@@ -812,7 +805,6 @@ button {
 }
 
 .social-list-mobile-menu {
-  outline: 2px solid red;
   margin-top: 16px;
 }
 
@@ -839,11 +831,9 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
-  outline: 2px solid red;
 }
 
 .subscribe-form-wrapper-mobile-menu {
-  margin-left: auto;
   padding-bottom: 96px;
 }
 
@@ -916,13 +906,22 @@ button {
     row-gap: 72px;
   }
 
-  .subscribe-form-mobile-menu {
-    display: flex;
-    align-items: baseline;
-  }
+  .logo-mobile-menu,
   .footer-logo-mobile-menu,
+  .logo-part-mobile-menu,
   .footer-text-mobile-menu,
   .subscribe-text-mobile-menu {
     text-align: left;
   }
+  .subscribe-form-input-mobile-menu {
+    width: 264px;
+  }
 }
+
+@media screen and (min-width: 1158px) {
+  .subscribe-form-input-mobile-menu {
+    width: 264px;
+  }
+}
+
+/* <!-- Beckdrop window mobile version --> */
