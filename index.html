@@ -161,7 +161,11 @@
           <h1 class="main-title-mobile-menu">
             Effective Solutions for Your Business
           </h1>
-          <button class="order-button-mobile-menu" type="button">
+          <button
+            class="order-button-mobile-menu"
+            type="button"
+            data-modal-open
+          >
             Order Service
           </button>
         </div>
@@ -1498,77 +1502,99 @@
 
     <!-- Beckdrop window mobile version -->
 
-    <div class="modal-backdrop">
-      <div class="modal">
-        <button class="modal-close-btn" type="button">
-          <svg class="close-btn-icon" width="8" height="8">
+    <div class="modal-backdrop-mobile-menu is-open" data-modal>
+      <div class="modal-mobile-menu">
+        <button
+          class="modal-close-btn-mobile-menu"
+          type="button"
+          data-modal-close
+        >
+          <svg class="close-btn-icon-mobile-menu" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <p class="modal-slogan">
+        <p class="modal-slogan-mobile-menu">
           Leave your contacts and we will call you back
         </p>
-        <form class="contact-form">
-          <div class="contact-form-field-form">
-            <label class="contact-form-field-label" for="user-name">Name</label>
-            <div class="contact-form-input-wrapper">
+        <form class="contact-form-mobile-menu">
+          <div class="contact-form-field-form-mobile-menu">
+            <label class="contact-form-field-label-mobile-menu" for="user-name"
+              >Name</label
+            >
+            <div class="contact-form-input-wrapper-mobile-menu">
               <input
-                class="contact-form-field-input"
+                class="contact-form-field-input-mobile-menu"
                 id="user-name"
                 type="text"
                 name="user-name"
                 required
               />
-              <svg class="contact-form-input-icon" width="18" height="24">
+              <svg
+                class="contact-form-input-icon-mobile-menu"
+                width="18"
+                height="24"
+              >
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
           </div>
-          <div class="contact-form-field-form">
-            <label class="contact-form-field-label" for="user-phone"
+          <div class="contact-form-field-form-mobile-menu">
+            <label class="contact-form-field-label-mobile-menu" for="user-phone"
               >Phone</label
             >
-            <div class="contact-form-input-wrapper">
+            <div class="contact-form-input-wrapper-mobile-menu">
               <input
-                class="contact-form-field-input"
+                class="contact-form-field-input-mobile-menu"
                 id="user-phone"
                 type="tel"
                 name="user-phone"
               />
-              <svg class="contact-form-input-icon" width="18" height="24">
+              <svg
+                class="contact-form-input-icon-mobile-menu"
+                width="18"
+                height="24"
+              >
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
           </div>
-          <div class="contact-form-field-form">
-            <label class="contact-form-field-label" for="user-email"
+          <div class="contact-form-field-form-mobile-menu">
+            <label class="contact-form-field-label-mobile-menu" for="user-email"
               >Email</label
             >
-            <div class="contact-form-input-wrapper">
+            <div class="contact-form-input-wrapper-mobile-menu">
               <input
-                class="contact-form-field-input"
+                class="contact-form-field-input-mobile-menu"
                 id="user-email"
                 type="email"
                 name="user-email"
               />
-              <svg class="contact-form-input-icon" width="18" height="24">
+              <svg
+                class="contact-form-input-icon-mobile-menu"
+                width="18"
+                height="24"
+              >
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
           </div>
-          <div class="contact-form-field-form contact-form-margin">
-            <label class="contact-form-field-label" for="user-comment"
+          <div
+            class="contact-form-field-form-mobile-menu contact-form-margin-mobile-menu"
+          >
+            <label
+              class="contact-form-field-label-mobile-menu"
+              for="user-comment"
               >Comment</label
             >
             <textarea
-              class="contact-form-comment"
+              class="contact-form-comment-mobile-menu"
               id="user-comment"
               placeholder="Text input"
               name="user-comment"
               required
             ></textarea>
           </div>
-          <div class="contact-form-checkbox-wrapper">
+          <div class="contact-form-checkbox-wrapper-mobile-menu">
             <input
               class="contact-form-checkbox visually-hidden"
               id="user-privacy"
@@ -1577,19 +1603,28 @@
               value="true"
               required
             />
-            <label class="contact-form-checkbox-label" for="user-privacy">
-              <span class="contact-form-checkbox-custom">
-                <svg class="" width="10" height="8">
-                  <use href="./images/icons.svg#icon-vector"></use>
-                </svg>
-              </span>
-              I accept the terms and conditions of the
-              <a class="contact-form-policy-link accent-color" href=""
-                >Privacy Policy</a
-              ></label
+            <label
+              class="contact-form-checkbox-label-mobile-menu"
+              for="user-privacy"
             >
+              <span class="contact-form-checkbox-custom-mobile-menu-span">
+                <span class="contact-form-checkbox-custom-mobile-menu">
+                  <svg class="" width="10" height="8">
+                    <use href="./images/icons.svg#icon-vector"></use>
+                  </svg>
+                </span>
+              </span>
+              <span>
+                I accept the terms and conditions of the
+                <a class="contact-form-policy-link accent-color" href=""
+                  >Privacy Policy</a
+                ></span
+              >
+            </label>
           </div>
-          <button class="contact-form-submit-btn" type="submit">Send</button>
+          <button class="contact-form-submit-btn-mobile-menu" type="submit">
+            Send
+          </button>
         </form>
       </div>
     </div>

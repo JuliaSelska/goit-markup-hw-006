@@ -922,6 +922,255 @@ button {
   .subscribe-form-input-mobile-menu {
     width: 264px;
   }
+
+  .social-list-link-mobile-menu:hover,
+  .social-list-link-mobile-menu:focus {
+    background-color: #31d0aa;
+  }
 }
 
 /* <!-- Beckdrop window mobile version --> */
+
+.modal-backdrop-mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999999999;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(46, 47, 66, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-backdrop-mobile-menu.is-open {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.modal-mobile-menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 288px;
+  min-height: 623px;
+  overflow: auto;
+  border-radius: 4px;
+  padding: 72px 24px 16px 16px;
+  background-color: #fcfcfc;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn-mobile-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7e9fc;
+  border: none;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  stroke: #2e2f42;
+  line-height: 0;
+  padding: 0px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn-mobile-menu:hover,
+.modal-close-btn-mobile-menu:focus {
+  fill: #ffffff;
+  background-color: #404bbf;
+  border: none;
+}
+
+.close-btn-icon-mobile-menu {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-slogan-mobile-menu {
+  max-width: 360px;
+  color: #2e2f42;
+  font-weight: 500;
+  font-size: 24;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+
+.contact-form-field-label-mobile-menu {
+  display: block;
+  color: #8e8f99;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+}
+
+.contact-form-field-input-mobile-menu {
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  background-color: transparent;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  padding-left: 38px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: transparent;
+}
+
+.contact-form-field-input-mobile-menu:focus {
+  outline: none;
+  border-color: #4d5ae5;
+}
+
+.contact-form-field-input-mobile-menu:focus
+  + .contact-form-input-icon-mobile-menu {
+  fill: #4d5ae5;
+}
+
+.contact-form-field-form-mobile-menu {
+  margin-bottom: 8px;
+}
+
+.contact-form-margin-mobile-menu {
+  margin-bottom: 16px;
+}
+
+.contact-form-input-icon-mobile-menu {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-form-input-wrapper-mobile-menu {
+  position: relative;
+}
+
+.contact-form-comment-mobile-menu {
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  max-width: 360px;
+  width: 100%;
+  height: 120px;
+  background-color: transparent;
+  padding: 8px 16px;
+  resize: none;
+  color: rgba(46, 47, 66, 0.4);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-form-coment-mobile-menu::placeholder {
+  color: rgb(46, 47, 66 0, 4);
+}
+
+.contact-form-comment-mobile-menu:focus {
+  outline: none;
+  border-color: #4d5ae5;
+}
+
+.contact-form-checkbox-custom-mobile-menu {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  cursor: pointer;
+}
+
+.contact-form-checkbox-mobile-menu:checked
+  + .contact-form-checkbox-label-mobile-menu
+  > .contact-form-checkbox-custom-mobile-menu {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
+
+.contact-form-checkbox-mobile-menu:focus
+  + .contact-form-checkbox-label-mobile-menu
+  > .contact-form-checkbox-custom-mobile-menu {
+  outline: 2px solid rgb(0, 0, 255 0, 5);
+}
+
+.contact-form-checkbox-label-mobile-menu {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.contact-form-checkbox-custom-mobile-menu-span {
+  margin-right: 8px;
+}
+
+.contact-form-policy-link-mobile-menu {
+  text-decoration: underline;
+}
+
+.accent-color {
+  color: #4d5ae5;
+}
+
+.contact-form-checkbox-wrapper-mobile-menu {
+  margin-bottom: 24px;
+}
+
+.contact-form-submit-btn-mobile-menu {
+  display: block;
+  margin: auto;
+  min-width: 169px;
+  height: 56px;
+  background-color: #4d5ae5;
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .modal-mobile-menu {
+    width: 408px;
+    min-height: 584px;
+    padding: 72px 24px 24px 24px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .modal-mobile-menu {
+    width: 408px;
+    min-height: 584px;
+    padding: 72px 24px 24px 24px;
+  }
+}
