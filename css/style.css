@@ -120,7 +120,7 @@ button {
   display: block;
 }
 
-.footer-logo .logo-part {
+.footer-logo-mobile-menu .logo-part-mobile-menu {
   color: #f4f4fd;
 }
 
@@ -332,7 +332,7 @@ button {
 
 .social-list-mobile-menu {
   display: flex;
-  gap: 40px;
+  gap: 16px;
 }
 
 .social-list-link-mobile-menu {
@@ -635,4 +635,294 @@ button {
   }
 }
 
+@media screen and (min-width: 1158px) {
+  .team-list-item-mobile-menu {
+    width: calc((100% - 72px) / 4);
+  }
+  .team-list-mobile-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+}
+
 /* Our portfolio mobile version */
+
+.portfolio-title-mobile-menu {
+  margin-bottom: 72px;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  color: #2e2f42;
+  margin-bottom: 72px;
+}
+.portfolio-list-mobile-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio-list-item-mobile-menu {
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.portfolio-list-description-mobile-menu {
+  text-align: left;
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.portfolio-list-text-mobile-menu {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #434455;
+}
+
+.portfolio-list-information-mobile-menu {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+.portfolio-overlay-text-mobile-menu {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-list-mobile-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .portfolio-list-mobile-menu {
+    display: flex;
+    gap: 48px 24px;
+  }
+  .portfolio-list-item-mobile-menu {
+    position: relative;
+    overflow: hidden;
+    width: calc((100% - 48px) / 3);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: none;
+  }
+  .portfolio-list-item-mobile-menu:hover .portfolio-overlay-text-mobile-menu {
+    transform: translateY(0%);
+  }
+
+  .portfolio-list-item-mobile-menu:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  }
+
+  .portfolio-overlay-container-mobile-menu {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .portfolio-overlay-text-mobile-menu {
+    display: flex;
+    position: absolute;
+    top: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    padding: 40px 32px;
+    background-color: #4d5ae5;
+    height: 100%;
+    width: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+/* Footer mobile version */
+.page-footer-mobile-menu {
+  background-color: #2e2f42;
+  margin: auto;
+}
+
+.page-footer-container-mobile-menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 72px;
+  align-items: center;
+  justify-content: center;
+}
+
+..page-footer-wrap-mobile-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-logo-mobile-menu {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.footer-logo-wrap-mobile-menu {
+  text-align: center;
+  padding-top: 96px;
+}
+
+.footer-logo-mobile-menu .logo-part-mobile-menu {
+  color: #f4f4fd;
+}
+
+.logo-mobile-menu {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+}
+
+.footer-paragraf-mobile-menu {
+  max-width: 288px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #f4f4fd;
+}
+
+.social-list-icon-mobile-menu {
+  fill: #f4f4fd;
+  stroke: #ffffff;
+}
+
+.social-list-mobile-menu {
+  outline: 2px solid red;
+  margin-top: 16px;
+}
+
+.social-list-link-mobile-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  flex-grow: 1;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-text-mobile-menu {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  outline: 2px solid red;
+}
+
+.subscribe-form-wrapper-mobile-menu {
+  margin-left: auto;
+  padding-bottom: 96px;
+}
+
+.subscribe-text-mobile-menu {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.subscribe-form-mobile-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe-form-input-mobile-menu {
+  width: 288px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.subscribe-form-input-mobile-menu ::placeholder {
+  color: #ffffff;
+}
+
+.footer-submit-btn-mobile-menu {
+  min-width: 165px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #4d5ae5;
+  border: none;
+  border-radius: 4px;
+}
+
+.footer-subscribe-icon-mobile-menu {
+  margin-left: 16px;
+  fill: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .page-footer-container-mobile-menu {
+    display: flex;
+    align-items: baseline;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .subscribe-form-mobile-menu {
+    display: flex;
+    align-items: baseline;
+  }
+  .footer-logo-mobile-menu,
+  .footer-text-mobile-menu,
+  .subscribe-text-mobile-menu {
+    text-align: left;
+  }
+}
